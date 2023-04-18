@@ -1,1 +1,26 @@
 # Create-boxes-in-blender
+import bpy
+
+#box 1
+bpy.ops.mesh.primitive_cube_add(location=(0,0,1))
+box1 = bpy.context.active_object
+box1.scale=(1,1,1)
+bpy.ops.mesh.primitive_cube_add(location=(0,0,1.6))
+boxcover1 = bpy.context.active_object
+boxcover1.scale=(1.2,1.2,0.5)
+
+#box 2
+bpy.ops.mesh.primitive_cube_add(location=(5,0,2))
+box2 = bpy.context.active_object
+box2.scale=(2,2,2)
+bpy.ops.mesh.primitive_cube_add(location=(5,0,3.5))
+boxcover2 = bpy.context.active_object
+boxcover2.scale=(2.5,2.5,1)
+
+#box 3
+bpy.ops.mesh.primitive_cube_add(location=(12,0,3))
+box3 = bpy.context.active_object
+box3.scale=(3,3,3)
+bpy.ops.mesh.primitive_cube_add(location=(12,0,5.6))
+boxcover3 = bpy.context.active_object
+boxcover3.scale=(3.5,3.5,1.5)
